@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Astro description" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Login</title>
+    </head>
+    <body>
+        <div
+            class="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-purple-700 to-purple-900 p-4"
+        >
+            <div
+                class="w-full max-w-md bg-white/95 backdrop-blur shadow-xl rounded-lg"
+            >
+                <div class="p-6">
+                    <div class="flex flex-col items-center space-y-2">
+                        <div
+                            class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center"
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                class="w-10 h-10 text-white"
+                                fill="currentColor"
+                            >
+                                <path
+                                    d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h2
+                            class="text-2xl font-bold text-center text-gray-800"
+                        >
+                            Welcome Back
+                        </h2>
+                        <p class="text-gray-600 text-center">
+                            Connect with your Twitch account to continue
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center pb-8 px-6">
+                    <a
+                        href="/api/auth/twitch"
+                        class="w-full max-w-xs bg-[#9146FF] hover:bg-[#7731f3] text-white flex items-center justify-center gap-2 py-6 px-4 rounded-md transition-colors duration-200"
+                    >
+                        <svg
+                            viewBox="0 0 24 24"
+                            class="w-6 h-6"
+                            fill="currentColor"
+                        >
+                            <path
+                                d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"
+                            ></path>
+                        </svg>
+                        Continue with Twitch
+                    </a>
+                    <p class="mt-6 text-sm text-gray-600 text-center">
+                        By continuing, you agree to our Terms of Service and
+                        Privacy Policy
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
